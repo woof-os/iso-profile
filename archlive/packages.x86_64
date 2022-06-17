@@ -159,3 +159,4 @@ networkmanager
 network-manager-applet
 xfce4-power-manager
 woof-icon-config
+os-prober
