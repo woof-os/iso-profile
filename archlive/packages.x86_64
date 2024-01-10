@@ -162,15 +162,3 @@ starship
 os-prober
 grub-btrfs
 starship
-bc
-findutils
-gdk-pixbuf2
-glib2
-grep
-gtk-engine-murrine
-gtk-engines
-librsvg
-sassc
-sed
-git
-python
