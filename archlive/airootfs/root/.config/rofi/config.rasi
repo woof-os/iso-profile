@@ -1,0 +1,6 @@
+configuration {
+ modi: "window,drun,ssh,combi";
+ font: "Fira Sans 12";
+ show-icons: true;
+}
+@theme "joni"
