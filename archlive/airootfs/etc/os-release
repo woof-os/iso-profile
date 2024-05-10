@@ -1,0 +1,10 @@
+NAME="Woof OS"
+ID=woofos
+ID_LIKE=arch
+BUILD_ID=rolling
+PRETTY_NAME="Woof OS"
+ANSI_COLOR="46;1;46;1;46"
+HOME_URL="https://os.lewoof.xyz"
+SUPPORT_URL="https://os.lewoof.xyz"
+BUG_REPORT_URL="https://github.com/woof-os"
+LOGO=woofos
