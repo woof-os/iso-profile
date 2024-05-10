@@ -128,7 +128,6 @@ wvdial
 xfsprogs
 xl2tpd
 zsh
-calamares
 base-devel
 fakeroot
 flameshot
@@ -164,7 +163,6 @@ woof-picom-config
 woof-qt5-config
 woof-qtile-config
 woof-rofi-config
-woof-calamares-config
 woof-starship-config
 woof-zsh-config
 woof-wallpapers
@@ -173,5 +171,5 @@ xorg
 xorg-xinit
 xwallpaper
 yay-bin
-cantarell-foints
+cantarell-fonts
 chromium
