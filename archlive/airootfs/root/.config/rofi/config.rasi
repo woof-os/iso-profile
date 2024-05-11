@@ -3,4 +3,4 @@ configuration {
  font: "Fira Sans 12";
  show-icons: true;
 }
-@theme "joni"
+@theme "themes/next"
