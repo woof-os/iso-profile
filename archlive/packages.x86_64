@@ -169,7 +169,6 @@ xfce4-power-manager
 xorg
 xorg-xinit
 xwallpaper
-yay-bin
 cantarell-fonts
 chromium
 pipewire
@@ -179,3 +178,4 @@ pipewire-alsa
 pavucontrol
 neovim
 exa
+calamares-bin
