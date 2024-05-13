@@ -136,7 +136,7 @@ gtk3
 grub-btrfs
 htop
 kcrash
-kitty
+alacritty
 lightdm
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
@@ -157,7 +157,7 @@ woof-change-wall
 woof-dunst-config
 woof-gtk-config
 woof-icon-config
-woof-kitty-config
+woof-alacritty-config
 woof-picom-config
 woof-qt5-config
 woof-qtile-config

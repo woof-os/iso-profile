@@ -22,9 +22,10 @@ colors = colors_json
 wallpaper = looks["wallpaper"]
 
 mod = "mod4"
-terminal = "kitty"
+terminal = "alacritty"
 browser = "brave"
-file_manager = "pcmanfm"
+file_manager = "alacritty -e vifm"
+home = os.path.expanduser("~")
 
 keys = [
     # Switch between windows
@@ -89,7 +90,9 @@ keys = [
     ),
     Key([mod], "f", lazy.spawn("flameshot gui"), desc="Open flameshot gui"),
     Key([mod], "s", lazy.spawn("scrot"), desc="Take full screen ss using scrot"),
-    Key([mod], "d", lazy.spawn(f"notify-send '{datetime.now()}'"), desc="Show date and time"),
+    Key([mod], "z", lazy.spawn(f"{home}/.config/qtile/view.sh"), desc="View in Zathura"),
+    # Toggle between screens
+    Key([mod], 'period', lazy.next_screen(), desc='Next monitor'),
 ]
 
 groups = [Group(i) for i in "1234567890"]
@@ -121,13 +124,13 @@ for i in groups:
 group_names = [
     ("code", {"layout": "bsp"}),
     ("wifi", {"layout": "max"}),
-    ("box", {"layout": "zoomy"}),
-    ("book", {"layout": "max"}),
-    ("comment", {"layout": "max"}),
-    ("gamepad", {"layout": "max"}),
-    ("tv", {"layout": "max"}),
-    ("coffee", {"layout": "floating"}),
-    ("bone", {"layout": "monadtall"}),
+    ("terminal", {"layout": "bsp"}),
+    ("stream", {"layout": "bsp"}),
+    ("project-diagram", {"layout": "bsp"}),
+    ("code-branch", {"layout": "bsp"}),
+    ("tv", {"layout": "bsp"}),
+    ("coffee", {"layout": "bsp"}),
+    ("record-vinyl", {"layout": "monadtall"}),
 ]
 
 groups = [Group(name, **kwargs) for name, kwargs in group_names]
@@ -138,7 +141,7 @@ for i, (name, kwargs) in enumerate(group_names, 1):
 
 layout_theme = {
     "border_width": 1,
-    "margin": 2,
+    "margin": 1,
     #     "border_focus": colors["color1"],
     #     "border_normal": colors["color2"],
     "border_focus": colors["border_focus"],
@@ -184,7 +187,7 @@ power_widgets: list = [
     ),
 ]
 
-widgets_list: list = [
+widgets_list = lambda: [
 #     ### Run ###
 #     widget.Sep(linewidth=0, padding=6, background=colors["start"]),
 #     widget.Image(
@@ -277,11 +280,11 @@ widgets_list: list = [
 # bar_margin = [int(layout_theme["margin"]/2), layout_theme["margin"], 0, layout_theme["margin"]]
 bar_margin = 0
 
-screen = Screen(
+screen0 = Screen(
 #     wallpaper=wallpaper,
 #     wallpaper_mode="fill",
     top=bar.Bar(
-       widgets_list,
+       widgets_list(),
        int(looks["panel-size"]),
        background=colors["bg"],
        opacity=float(looks["panel-opacity"]),
@@ -289,7 +292,19 @@ screen = Screen(
    ),
 )
 
-screens = [screen]
+screen1 = Screen(
+#     wallpaper=wallpaper,
+#     wallpaper_mode="fill",
+    top=bar.Bar(
+        widgets_list(),
+       int(looks["panel-size"]),
+       background=colors["bg"],
+       opacity=float(looks["panel-opacity"]),
+       margin=bar_margin,
+   ),
+)
+
+screens = [screen0, screen1]
 
 # Drag floating layouts.
 mouse = [
@@ -310,7 +325,7 @@ dgroups_app_rules = []  # type: List
 main = None  # WARNING: this is deprecated and will be removed soon
 follow_mouse_focus = True
 bring_front_click = False
-cursor_warp = False
+# cursor_warp = True
 floating_layout = layout.Floating(
     **layout_theme,
     float_rules=[
@@ -350,12 +365,10 @@ floating_layout = layout.Floating(
 
 @hook.subscribe.startup_once
 def start_once():
-    home = os.path.expanduser("~")
     subprocess.call([home + "/.config/qtile/autostart.sh"])
 
 @hook.subscribe.startup
 def runner():
-    home = os.path.expanduser("~")
     subprocess.Popen(["xsetroot", "-cursor_name", "left_ptr"])
     subprocess.Popen(["xwallpaper", "--zoom", wallpaper])
 
