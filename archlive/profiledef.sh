@@ -2,13 +2,15 @@
 # shellcheck disable=SC2034
 
 iso_name="woofos"
-iso_label="woof-os-$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
+iso_label="woofos-$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
 iso_publisher="Woof OS <https://os.lewoof.xyz>"
 iso_application="Woof OS Live/Rescue DVD"
 iso_version="$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y.%m.%d)"
 install_dir="arch"
 buildmodes=('iso')
 bootmodes=('bios.syslinux.mbr' 'bios.syslinux.eltorito'
+	   'uefi-ia32.grub.esp' 'uefi-x64.grub.esp'
+           'uefi-ia32.grub.eltorito' 'uefi-x64.grub.eltorito'
            'uefi-ia32.systemd-boot.esp' 'uefi-x64.systemd-boot.esp'
            'uefi-ia32.systemd-boot.eltorito' 'uefi-x64.systemd-boot.eltorito')
 arch="x86_64"
