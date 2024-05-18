@@ -141,7 +141,8 @@ lightdm
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 lxappearance
-nerd-fonts
+ttf-firacode-nerd
+ttf-jetbrains-mono-nerd
 network-manager-applet
 networkmanager
 noto-fonts
