@@ -157,7 +157,6 @@ woof-dunst-config
 woof-gtk-config
 woof-icon-config
 woof-alacritty-config
-woof-picom-config
 woof-qt5-config
 woof-qtile-config
 woof-rofi-config
@@ -182,3 +181,5 @@ calamares-bin
 otf-font-awesome-5
 yay-bin
 vifm
+zathura
+mpv
