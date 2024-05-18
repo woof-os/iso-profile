@@ -148,7 +148,6 @@ noto-fonts
 noto-fonts-cjk
 os-prober
 picom
-pcmanfm
 qt5ct
 starship
 ttf-fira-code
@@ -182,3 +181,4 @@ exa
 calamares-bin
 otf-font-awesome-5
 yay-bin
+vifm
