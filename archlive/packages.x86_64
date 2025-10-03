@@ -1,7 +1,6 @@
 alsa-utils
 amd-ucode
 arch-install-scripts
-archinstall
 b43-fwcutter
 base
 bcachefs-tools
@@ -10,7 +9,6 @@ bolt
 brltty
 broadcom-wl
 btrfs-progs
-clonezilla
 cloud-init
 cryptsetup
 darkhttpd
@@ -112,7 +110,6 @@ udftools
 usb_modeswitch
 usbmuxd
 usbutils
-vim
 vpnc
 wireless-regdb
 wireless_tools
@@ -143,7 +140,6 @@ os-prober
 picom
 qt5ct
 starship
-ttf-fira-code
 vim
 woof-change-wall
 woof-dunst-config
@@ -166,8 +162,6 @@ xwallpaper
 pipewire
 wireplumber
 pipewire-pulse
-pipewire-alsa
-pavucontrol
 neovim
 exa
 calamares-bin
