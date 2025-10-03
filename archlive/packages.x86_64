@@ -115,7 +115,6 @@ usb_modeswitch
 usbmuxd
 usbutils
 vim
-virtualbox-guest-utils-nox
 vpnc
 wireless-regdb
 wireless_tools
@@ -142,8 +141,6 @@ ttf-firacode-nerd
 ttf-jetbrains-mono-nerd
 network-manager-applet
 networkmanager
-noto-fonts
-noto-fonts-cjk
 os-prober
 picom
 qt5ct
