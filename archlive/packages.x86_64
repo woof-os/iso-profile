@@ -129,9 +129,6 @@ kcrash
 alacritty
 lightdm
 lightdm-gtk-greeter
-lightdm-gtk-greeter-settings
-lxappearance
-ttf-firacode-nerd
 ttf-jetbrains-mono-nerd
 network-manager-applet
 networkmanager
