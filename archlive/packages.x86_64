@@ -122,7 +122,6 @@ base-devel
 fakeroot
 flameshot
 git
-gtk2
 gtk3
 grub-btrfs
 htop
@@ -171,8 +170,6 @@ vifm
 zathura
 mpv
 themix-theme-oomox-git
-gtk-engines
-gtk-engine-murrine
 ripgrep
 rofi-power-menu
 wget
