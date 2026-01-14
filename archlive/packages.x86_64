@@ -145,6 +145,7 @@ woof-alacritty-config
 woof-qt5-config
 woof-qtile-config
 woof-rofi-config
+woof-keyd-config
 woof-starship-config
 woof-zsh-config
 woof-wallpapers
