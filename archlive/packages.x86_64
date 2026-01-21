@@ -153,6 +153,7 @@ woof-calamares-config
 woof-nvim-config
 woof-zathura-config
 woof-lf-config
+woof-qute-config
 xfce4-power-manager
 xorg
 xorg-xinit
