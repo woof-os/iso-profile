@@ -23,8 +23,8 @@ wallpaper = looks["wallpaper"]
 
 mod = "mod4"
 terminal = "alacritty"
-browser = "brave"
-file_manager = "alacritty -e vifm"
+browser = "qutebrowser"
+file_manager = "alacritty -e lf"
 home = os.path.expanduser("~")
 
 keys = [
