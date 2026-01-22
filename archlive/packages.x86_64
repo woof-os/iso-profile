@@ -120,15 +120,11 @@ xl2tpd
 zsh
 base-devel
 fakeroot
-flameshot
 git
-gtk3
 grub-btrfs
 htop
 kcrash
 alacritty
-lightdm
-lightdm-gtk-greeter
 ttf-jetbrains-mono-nerd
 network-manager-applet
 networkmanager
@@ -137,7 +133,6 @@ picom
 qt5ct
 starship
 vim
-woof-change-wall
 woof-dunst-config
 woof-gtk-config
 woof-icon-config
@@ -157,7 +152,6 @@ woof-qute-config
 xfce4-power-manager
 xorg
 xorg-xinit
-xwallpaper
 pipewire
 wireplumber
 pipewire-pulse
@@ -165,7 +159,6 @@ neovim
 exa
 otf-font-awesome-5
 yay-bin
-vifm
 zathura
 mpv
 themix-theme-oomox-git
