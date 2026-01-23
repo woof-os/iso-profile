@@ -125,7 +125,7 @@ grub-btrfs
 htop
 kcrash
 alacritty
-ttf-jetbrains-mono-nerd
+ttf-jetbrains-mono
 network-manager-applet
 networkmanager
 os-prober
@@ -148,8 +148,6 @@ woof-calamares-config
 woof-zathura-config
 woof-lf-config
 woof-qute-config
-xorg
-xorg-xinit
 pipewire
 wireplumber
 pipewire-pulse
