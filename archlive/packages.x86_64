@@ -130,7 +130,6 @@ network-manager-applet
 networkmanager
 os-prober
 picom
-qt5ct
 starship
 vim
 woof-dunst-config
